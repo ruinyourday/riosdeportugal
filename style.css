@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url('fonts/AktivGrotesk-Regular.otf');
+  src: url('fonts/AktivGrotesk-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url('fonts/AktivGrotesk-Light.otf');
+  src: url('fonts/AktivGrotesk-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url('fonts/AktivGrotesk-Bold.otf');
+  src: url('fonts/AktivGrotesk-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+  font-family: "Aktive Grotesk", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#header-nav{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-top: 4px solid hsl(0, 0, 0.7);
+  border-bottom: 4px solid hsl(0, 0, 0.7);
+}
+
+#header-nav .header{
+  background-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  padding: 24px 16px;
+}
+
+#header-nav .header img{
+  min-width: 0;
+}
+
+#content-wrap{
+  background-color: bisque;
+  height: 1800px;
+}
+
+nav.navigation{
+  border-top: 1px solid hsl(0, 0%, 0.7%);
+  border-bottom: 1px solid hsl(0, 0%, 0.7%);
+}
+
+nav.navigation ul {
+  padding: 0 16px;
+  list-style: none;
+  margin: 0;
+}
+
+nav.navigation ul li {
+  display: inline-block;
+  margin: 0 16px 0 0;
+  padding: 0px;
+}
+
+nav.navigation ul li.selected{
+  font-weight: bold;
+  border-bottom: 4px solid black;
+  padding: 16px 0 12px;
+}
+
+#rios-hero{
+  position: relative;
+  height: 60vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#rios-hero .poster{
+  height: 100vh;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: bottom right;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.waves-section {
+  width: 100%;
+  padding: 32px 0 8px px;
+  overflow: hidden;
+}
+
+.waves-section .waves{
+  max-width: none;
+  height: 59px;
+  animation: makingWaves 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes makingWaves {
+  0% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 575.98px) {
+  #hero-video {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header#rios-hero {
+    background: url('images/hero-poster.gif') no-repeat bottom right scroll;
+  }
+}
