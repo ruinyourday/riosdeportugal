@@ -1,150 +1,216 @@
 @font-face {
-  font-family: "Aktive Grotesk";
-  src: url('fonts/AktivGrotesk-Regular.otf');
-  src: url('fonts/AktivGrotesk-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Aktive Grotesk';
+	src: url('fonts/AktivGrotesk-Regular.otf');
+	src: url('fonts/AktivGrotesk-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktive Grotesk";
-  src: url('fonts/AktivGrotesk-Light.otf');
-  src: url('fonts/AktivGrotesk-Light.otf') format('opentype');
-  font-weight: light;
-  font-style: normal;
+	font-family: 'Aktive Grotesk';
+	src: url('fonts/AktivGrotesk-Light.otf');
+	src: url('fonts/AktivGrotesk-Light.otf') format('opentype');
+	font-weight: light;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktive Grotesk";
-  src: url('fonts/AktivGrotesk-Bold.otf');
-  src: url('fonts/AktivGrotesk-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'Aktive Grotesk';
+	src: url('fonts/AktivGrotesk-Bold.otf');
+	src: url('fonts/AktivGrotesk-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
 }
 
-body{
-  font-family: "Aktive Grotesk", Helvetica, sans-serif;
-  font-size: 16px;
+body {
+	font-family: 'Aktive Grotesk', Helvetica, sans-serif;
+	font-size: 16px;
 }
 
-#header-nav{
-  position: sticky;
-  top: 0;
-  background-color: white;
-  border-top: 4px solid hsl(0, 0, 0.7);
-  border-bottom: 4px solid hsl(0, 0, 0.7);
+#header-nav {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	border-top: 4px solid hsl(0, 0, 0.7);
+	border-bottom: 4px solid hsl(0, 0, 0.7);
 }
 
-#header-nav .header{
-  background-color: white;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 16px;
-  width: 100%;
-  padding: 24px 16px;
+#header-nav .header {
+	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 16px;
+	width: 100%;
+	padding: 24px 16px;
 }
 
-#header-nav .header img{
-  min-width: 0;
+#header-nav .header img {
+	min-width: 0;
 }
 
-#content-wrap{
-  background-color: bisque;
-  height: 1800px;
+#content-wrap {
+	background-color: bisque;
+	height: 1800px;
 }
 
-nav.navigation{
-  border-top: 1px solid hsl(0, 0%, 0.7%);
-  border-bottom: 1px solid hsl(0, 0%, 0.7%);
+nav.navigation {
+	border-top: 1px solid hsl(0, 0%, 0.7%);
+	border-bottom: 1px solid hsl(0, 0%, 0.7%);
 }
 
 nav.navigation ul {
-  padding: 0 16px;
-  list-style: none;
-  margin: 0;
+	padding: 0 16px;
+	list-style: none;
+	margin: 0;
+	display: inline-block;
 }
 
 nav.navigation ul li {
-  display: inline-block;
-  margin: 0 16px 0 0;
-  padding: 0px;
+	display: inline-block;
+	margin: 0 16px 0 0;
+	padding: 0px;
 }
 
-nav.navigation ul li.selected{
-  font-weight: bold;
-  border-bottom: 4px solid black;
-  padding: 16px 0 12px;
+nav.navigation ul li.selected {
+	font-weight: bold;
+	border-bottom: 4px solid black;
+	padding: 16px 0 12px;
 }
 
-#rios-hero{
-  position: relative;
-  height: 60vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+#rios-hero {
+	position: relative;
+	height: 60vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
 }
 
-#hero-video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+#hero-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
 }
 
-#rios-hero .poster{
-  height: 100vh;
-  min-height: 100vh;
-  object-fit: cover;
-  object-position: bottom right;
-  position: absolute;
-  top: 0;
-  left: 0;
+#rios-hero .poster {
+	height: 100vh;
+	min-height: 100vh;
+	object-fit: cover;
+	object-position: bottom right;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .waves-section {
-  position: relative;
-  height: 110px;
-  width: 100%;
-  overflow: hidden;
+	position: relative;
+	height: 110px;
+	width: 100%;
+	overflow: hidden;
 }
 
-.waves-section .waves{
-  max-width: none;
-  height: 100%;
-  padding: 32px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: makingWaves 5s infinite;
-  animation-timing-function: linear;
+.waves-section .waves {
+	max-width: none;
+	height: 100%;
+	padding: 32px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: makingWaves 5s infinite;
+	animation-timing-function: linear;
+}
+
+.social-icon {
+	width: 26px;
+	display: inline-block;
+	margin: 0 4px -9px;
+}
+
+.social-link {
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+	display: inline;
+	float: right;
+	padding: 16px 24px;
+}
+
+.icon_svg {
+	cursor: pointer;
+	height: 56px;
+	display: none;
+	vertical-align: bottom;
+	width: 56px;
+	margin-left: 16px;
+}
+svg {
+	width: 56px;
+	height: 56px;
+}
+.squiggle {
+	stroke-dasharray: 0 16 101 16;
+	-webkit-animation: moveTheWave 8.4s linear infinite;
+	animation: moveTheWave 8.4s linear infinite;
+}
+
+.intro {
+	max-width: 800px;
+	margin: auto;
+	padding-top: 40px;
+}
+
+@-webkit-keyframes moveTheWave {
+	0% {
+		stroke-dashoffset: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		stroke-dashoffset: -133;
+		-webkit-transform: translate3d(-90px, 0, 0);
+		transform: translate3d(-90px, 0, 0);
+	}
+}
+
+@keyframes moveTheWave {
+	0% {
+		stroke-dashoffset: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		stroke-dashoffset: -133;
+		-webkit-transform: translate3d(-90px, 0, 0);
+		transform: translate3d(-90px, 0, 0);
+	}
 }
 
 @keyframes makingWaves {
-  0% {
-    transform: translateX(0%);
-  }
+	0% {
+		transform: translateX(0%);
+	}
 
-  100% {
-    transform: translateX(-13.4%);
-  }
+	100% {
+		transform: translateX(-13.4%);
+	}
 }
 
 @media (max-width: 575.98px) {
-  #hero-video {
-    display: none;
-  }
+	#hero-video {
+		display: none;
+	}
 }
 
 @media (pointer: coarse) and (hover: none) {
-  header#rios-hero {
-    background: url('images/hero-poster.gif') no-repeat bottom right scroll;
-  }
+	header#rios-hero {
+		background: url('images/hero-poster.gif') no-repeat bottom right scroll;
+	}
 }
